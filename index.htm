@@ -1,8 +1,15 @@
 <html xmlns:v="urn:schemas-microsoft-com:vml"
+<<<<<<< HEAD
       xmlns:o="urn:schemas-microsoft-com:office:office"
       xmlns:w="urn:schemas-microsoft-com:office:word"
       xmlns:m="http://schemas.microsoft.com/office/2004/12/omml"
       xmlns="http://www.w3.org/TR/REC-html40">
+=======
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns:m="http://schemas.microsoft.com/office/2004/12/omml"
+xmlns="http://www.w3.org/TR/REC-html40"> 
+>>>>>>> 2aba1a787ac50a29224d0de47bd3204793600496
 
 <head>
     <meta http-equiv=Content-Type content="text/html; charset=windows-1252">
@@ -1122,6 +1129,7 @@ mso-fareast-font-family:"Times New Roman"'><o:p>&nbsp;</o:p></span>
                     <b style='mso-bidi-font-weight:normal'>
                         <span lang=EN style='font-size:12.0pt;
 line-height:90%;font-family:"Times New Roman",serif;mso-fareast-font-family:
+<<<<<<< HEAD
 "Times New Roman"'>Applications of semantic segmentation.<o:p></o:p></span>
                     </b>
                 </p>
@@ -1169,6 +1177,39 @@ mso-fareast-font-family:"Times New Roman"'>Current State of the Art<o:p></o:p></
             <p class=MsoNormal style='line-height:90%;mso-pagination:none'>
                 <b style='mso-bidi-font-weight:normal'>
                     <span lang=EN style='font-size:12.0pt;
+=======
+"Times New Roman"'>Applications of semantic segmentation.<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in;line-height:90%;mso-pagination:none'><span lang=EN
+style='font-size:12.0pt;line-height:90%;font-family:"Times New Roman",serif;
+mso-fareast-font-family:"Times New Roman"'>Semantic Segmentation has a wide
+array of applications in many industries, and is an important intermediate step
+in creating truly intelligent computer-vision systems. In the context of
+self-driving vehicles, knowing where roads, pedestrians, and other objects are
+in a single image is a necessary step to determine where these objects are in
+3D space. Semantic segmentation is also used in medical image analysis in order
+to determine the locations of tumors and other defects.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in;line-height:90%;mso-pagination:none'><span lang=EN
+style='font-size:12.0pt;line-height:90%;font-family:"Times New Roman",serif;
+mso-fareast-font-family:"Times New Roman"'>Unfortunately, generalized semantic
+segmentation is among the hardest computer vision tasks because to predict the
+class of any single pixel requires high level of contextual knowledge about
+that pixel and <span class=SpellE>its</span> surroundings. There is almost no
+way to predict the semantic class of a single pixel using only its RGB values
+directly. A Blue-Greyish pixel could be part of a sky, a road, a building, a
+car, a road, or a jacket. Its the challenge of semantic segmentation combined
+with the clear utility that has us interested in the task.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='line-height:90%;mso-pagination:none'><span lang=EN
+style='font-size:18.0pt;line-height:90%;font-family:"Times New Roman",serif;
+mso-fareast-font-family:"Times New Roman"'>Current State of the Art<o:p></o:p></span></p>
+
+<p class=MsoNormal style='line-height:90%;mso-pagination:none'><b
+style='mso-bidi-font-weight:normal'><span lang=EN style='font-size:12.0pt;
+>>>>>>> 2aba1a787ac50a29224d0de47bd3204793600496
 line-height:90%;font-family:"Times New Roman",serif;mso-fareast-font-family:
 "Times New Roman"'>UNET<o:p></o:p></span>
                 </b>
@@ -1197,6 +1238,7 @@ line-height:90%;font-family:"Times New Roman",serif;mso-fareast-font-family:
 "Times New Roman"'>Motivation</span>
                     </b><span lang=EN style='font-size:12.0pt;
 line-height:90%;font-family:"Times New Roman",serif;mso-fareast-font-family:
+<<<<<<< HEAD
 "Times New Roman"'><o:p></o:p></span>
                 </p>
 
@@ -1238,6 +1280,35 @@ mso-fareast-font-family:"Times New Roman"'>
                 <p class=MsoNormal style='line-height:90%;mso-pagination:none'>
                     <b style='mso-bidi-font-weight:normal'>
                         <span lang=EN style='font-size:12.0pt;
+=======
+"Times New Roman"'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in;text-indent:.5in;line-height:90%;mso-pagination:none'><span
+lang=EN style='font-size:12.0pt;line-height:90%;font-family:"Times New Roman",serif;
+mso-fareast-font-family:"Times New Roman"'>A major challenge of semantic
+segmentation, or any other machine learning techniques in computer vision is
+the curse of dimensionality. For a modestly-sized 480x360 color image, there
+are 480 * 360 * 3 = 518,400 values to consider (one for each RGB value of each
+pixel). And for semantic segmentation, the output is of size 480 * 360 =
+172,800 <b style='mso-bidi-font-weight:normal'>per class. </b>To train neural
+networks with data of this dimensionality requires a vast amount of training
+data and computational power, which are both expensive. <o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in;line-height:90%;mso-pagination:none'><span lang=EN
+style='font-size:12.0pt;line-height:90%;font-family:"Times New Roman",serif;
+mso-fareast-font-family:"Times New Roman"'><span style='mso-tab-count:1'>            </span>In
+short, the goal of our approach is to create a learning-based approach to
+semantic segmentation that creates a smaller predictive model than current
+convolutional methods. This in turn reduces the amount of training data
+required to train the model, and speeds up the learning process. This is done
+by dramatically reducing the dimensionality of the input to our predictive model.<b
+style='mso-bidi-font-weight:normal'><o:p></o:p></b></span></p>
+
+<p class=MsoNormal style='line-height:90%;mso-pagination:none'><b
+style='mso-bidi-font-weight:normal'><span lang=EN style='font-size:12.0pt;
+>>>>>>> 2aba1a787ac50a29224d0de47bd3204793600496
 line-height:90%;font-family:"Times New Roman",serif;mso-fareast-font-family:
 "Times New Roman"'>Multiscale Sliding Windows<o:p></o:p></span>
                     </b>
@@ -1247,6 +1318,7 @@ line-height:90%;font-family:"Times New Roman",serif;mso-fareast-font-family:
                     <b style='mso-bidi-font-weight:normal'>
                         <span lang=EN style='font-size:12.0pt;
 line-height:90%;font-family:"Times New Roman",serif;mso-fareast-font-family:
+<<<<<<< HEAD
 "Times New Roman"'><span style='mso-tab-count:1'>����������� </span></span>
                     </b><span lang=EN style='font-size:12.0pt;line-height:90%;font-family:"Times New Roman",serif;
 mso-fareast-font-family:"Times New Roman"'>
@@ -1305,6 +1377,47 @@ mso-fareast-font-family:"Times New Roman"'>
             <p class=MsoNormal style='line-height:90%;mso-pagination:none'>
                 <b style='mso-bidi-font-weight:normal'>
                     <span lang=EN style='font-size:12.0pt;
+=======
+"Times New Roman"'><span style='mso-tab-count:1'>            </span></span></b><span
+lang=EN style='font-size:12.0pt;line-height:90%;font-family:"Times New Roman",serif;
+mso-fareast-font-family:"Times New Roman"'>One way that we accomplish this is
+by creating a model that makes a prediction only about a small chunk of an
+image. In our case, we predict the semantic composition of only a 32x32 chunk
+of a high-resolution image. However, in order to make a prediction about that
+small chunk, it helps to also know the visual context of the area surrounding
+that chunk. This context is captured by using a multiscale pyramid of
+progressively larger but lower-fidelity chunks surrounding the core chunk we
+wish to make a prediction on.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='line-height:90%;mso-pagination:none'><span lang=EN
+style='font-size:12.0pt;line-height:90%;font-family:"Times New Roman",serif;
+mso-fareast-font-family:"Times New Roman"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='line-height:90%;mso-pagination:none'><span lang=EN
+style='font-size:12.0pt;line-height:90%;font-family:"Times New Roman",serif;
+mso-fareast-font-family:"Times New Roman";mso-no-proof:yes'><!--[if gte vml 1]><v:shape
+ id="image6.png" o:spid="_x0000_i1032" type="#_x0000_t75" style='width:468pt;
+ height:117.9pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="Semantic%20Segmentation%20Web_files/image003.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=624 height=157
+src="Semantic%20Segmentation%20Web_files/image004.gif" v:shapes="image6.png"><![endif]></span><span
+lang=EN style='font-size:12.0pt;line-height:90%;font-family:"Times New Roman",serif;
+mso-fareast-font-family:"Times New Roman"'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='line-height:90%;mso-pagination:none'><span lang=EN
+style='font-size:12.0pt;line-height:90%;font-family:"Times New Roman",serif;
+mso-fareast-font-family:"Times New Roman"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='line-height:90%;mso-pagination:none'><span lang=EN
+style='font-size:12.0pt;line-height:90%;font-family:"Times New Roman",serif;
+mso-fareast-font-family:"Times New Roman"'><span style='mso-tab-count:1'>            </span>In
+order to perform semantic segmentation on the whole image, we then slide this
+pyramid across the whole image, giving us a semantic prediction of every 32x32
+subblock. <o:p></o:p></span></p>
+
+<p class=MsoNormal style='line-height:90%;mso-pagination:none'><b
+style='mso-bidi-font-weight:normal'><span lang=EN style='font-size:12.0pt;
+>>>>>>> 2aba1a787ac50a29224d0de47bd3204793600496
 line-height:90%;font-family:"Times New Roman",serif;mso-fareast-font-family:
 "Times New Roman"'><o:p>&nbsp;</o:p></span>
                 </b>
@@ -1318,6 +1431,7 @@ line-height:90%;font-family:"Times New Roman",serif;mso-fareast-font-family:
                     <b style='mso-bidi-font-weight:normal'>
                         <span lang=EN style='font-size:12.0pt;
 line-height:90%;font-family:"Times New Roman",serif;mso-fareast-font-family:
+<<<<<<< HEAD
 "Times New Roman"'>Texture Dimensionality Reduction with PCA<o:p></o:p></span>
                     </b>
                 </p>
@@ -1369,6 +1483,49 @@ mso-fareast-font-family:"Times New Roman"'><o:p></o:p></span>
             <p class=MsoNormal style='line-height:90%;mso-pagination:none'>
                 <b style='mso-bidi-font-weight:normal'>
                     <span lang=EN style='font-size:12.0pt;
+=======
+"Times New Roman"'>Texture Dimensionality Reduction with PCA<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='text-indent:.5in;line-height:90%;mso-pagination:none'><span
+lang=EN style='font-size:12.0pt;line-height:90%;font-family:"Times New Roman",serif;
+mso-fareast-font-family:"Times New Roman"'>As mentioned, image data is
+inherently <i style='mso-bidi-font-style:normal'>very </i>high-dimensional.
+Limiting the prediction inputs to the images of the multiscale pyramid helps
+reduce this dimensionality somewhat, but not enough to make a truly small model.
+So, we use Principle Component Analysis to reduce the input dimensionality even
+further.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:.5in;line-height:90%;mso-pagination:none'><span
+lang=EN style='font-size:12.0pt;line-height:90%;font-family:"Times New Roman",serif;
+mso-fareast-font-family:"Times New Roman"'>Consider a single 32x32 black &amp;
+while image. Similar to how we can use the <span class=SpellE>fourier</span>
+transform / discrete cosine transform to perform a basis transformation, giving
+us the original 32x32 image in different basis coefficients, we can also use
+PCA to get different basis coefficients for the image. We can then drop most
+of these basis coefficients, obtaining a compact representation of the
+original 32x32 image. If we want to perform a prediction about this 32x32
+image, we can use maybe 90 of the most important PCA coefficients instead of
+the whole 1024 pixel values. <o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:.5in;line-height:90%;mso-pagination:none'><span
+lang=EN style='font-size:12.0pt;line-height:90%;font-family:"Times New Roman",serif;
+mso-fareast-font-family:"Times New Roman";mso-no-proof:yes'><!--[if gte vml 1]><v:shape
+ id="image1.png" o:spid="_x0000_i1031" type="#_x0000_t75" style='width:323.7pt;
+ height:211.2pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="Semantic%20Segmentation%20Web_files/image005.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=432 height=282
+src="Semantic%20Segmentation%20Web_files/image006.gif" v:shapes="image1.png"><![endif]></span><span
+lang=EN style='font-size:12.0pt;line-height:90%;font-family:"Times New Roman",serif;
+mso-fareast-font-family:"Times New Roman"'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:.5in;line-height:90%;mso-pagination:none'><span
+lang=EN style='font-size:12.0pt;line-height:90%;font-family:"Times New Roman",serif;
+mso-fareast-font-family:"Times New Roman"'>[Include example compressed <span
+class=SpellE>pca</span> image]<o:p></o:p></span></p>
+
+<p class=MsoNormal style='line-height:90%;mso-pagination:none'><b
+style='mso-bidi-font-weight:normal'><span lang=EN style='font-size:12.0pt;
+>>>>>>> 2aba1a787ac50a29224d0de47bd3204793600496
 line-height:90%;font-family:"Times New Roman",serif;mso-fareast-font-family:
 "Times New Roman"'><o:p>&nbsp;</o:p></span>
                 </b>
@@ -1387,6 +1544,7 @@ line-height:90%;font-family:"Times New Roman",serif;mso-fareast-font-family:
                     <b style='mso-bidi-font-weight:normal'>
                         <span lang=EN style='font-size:12.0pt;
 line-height:90%;font-family:"Times New Roman",serif;mso-fareast-font-family:
+<<<<<<< HEAD
 "Times New Roman"'><span style='mso-tab-count:1'>����������� </span></span>
                     </b><span lang=EN style='font-size:12.0pt;line-height:90%;font-family:"Times New Roman",serif;
 mso-fareast-font-family:"Times New Roman"'>
@@ -1456,6 +1614,57 @@ mso-fareast-font-family:"Times New Roman"'><o:p></o:p></span>
                 <p class=MsoNormal style='line-height:90%;mso-pagination:none'>
                     <b style='mso-bidi-font-weight:normal'>
                         <span lang=EN style='font-size:12.0pt;
+=======
+"Times New Roman"'><span style='mso-tab-count:1'>            </span></span></b><span
+lang=EN style='font-size:12.0pt;line-height:90%;font-family:"Times New Roman",serif;
+mso-fareast-font-family:"Times New Roman"'>Beyond using PCA to reduce the
+dimensionality of the Texture information of an image sub-block, we can also
+use PCA to reduce the dimensionality of the color information of each image.
+Images are typically thought of as having red, green, and blue channels. To dimensionality-reduce
+an image, we could apply the PCA texture encoding to the red, green, &amp; blue
+channels of an image. However, if you apply PCA to the RGB values of an image,
+you get a more efficient way to represent an image. You get three new channels,
+specific to that image, where the first channel is most important, the second
+one less important than the first channel, and the last channel least
+important. For example, this small image of some tree roots with mulch is well
+approximated when using only &#8532; PCA channels. <o:p></o:p></span></p>
+
+<p class=MsoNormal style='line-height:90%;mso-pagination:none'><span lang=EN
+style='font-size:12.0pt;line-height:90%;font-family:"Times New Roman",serif;
+mso-fareast-font-family:"Times New Roman"'><span style='mso-tab-count:1'> </span><span
+style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="image4.png" o:spid="_x0000_i1030"
+ type="#_x0000_t75" style='width:361.5pt;height:194.1pt;visibility:visible;
+ mso-wrap-style:square'>
+ <v:imagedata src="Semantic%20Segmentation%20Web_files/image007.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=482 height=259
+src="Semantic%20Segmentation%20Web_files/image008.gif" v:shapes="image4.png"><![endif]></span><o:p></o:p></span></p>
+
+<p class=MsoNormal style='line-height:90%;mso-pagination:none'><span lang=EN
+style='font-size:12.0pt;line-height:90%;font-family:"Times New Roman",serif;
+mso-fareast-font-family:"Times New Roman"'><span style='mso-tab-count:1'>            </span><o:p></o:p></span></p>
+
+<p class=MsoNormal style='line-height:90%;mso-pagination:none'><span lang=EN
+style='font-size:12.0pt;line-height:90%;font-family:"Times New Roman",serif;
+mso-fareast-font-family:"Times New Roman"'><span style='mso-tab-count:1'>            </span>Instead
+of applying PCA texture dimensionality reduction to the red, green, and blue
+channels, we apply it to the 3 custom PCA channels. Because we know that the
+channels are ordered by importance, we encode the most texture information
+about the first channel, and less in the other two channels.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='line-height:90%;mso-pagination:none'><span lang=EN
+style='font-size:12.0pt;line-height:90%;font-family:"Times New Roman",serif;
+mso-fareast-font-family:"Times New Roman";mso-no-proof:yes'><!--[if gte vml 1]><v:shape
+ id="image7.png" o:spid="_x0000_i1029" type="#_x0000_t75" style='width:254.1pt;
+ height:142.8pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="Semantic%20Segmentation%20Web_files/image009.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=339 height=190
+src="Semantic%20Segmentation%20Web_files/image010.gif" v:shapes="image7.png"><![endif]></span><span
+lang=EN style='font-size:12.0pt;line-height:90%;font-family:"Times New Roman",serif;
+mso-fareast-font-family:"Times New Roman"'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='line-height:90%;mso-pagination:none'><b
+style='mso-bidi-font-weight:normal'><span lang=EN style='font-size:12.0pt;
+>>>>>>> 2aba1a787ac50a29224d0de47bd3204793600496
 line-height:90%;font-family:"Times New Roman",serif;mso-fareast-font-family:
 "Times New Roman"'><o:p>&nbsp;</o:p></span>
                     </b>
@@ -1475,6 +1684,7 @@ line-height:90%;font-family:"Times New Roman",serif;mso-fareast-font-family:
                     <b style='mso-bidi-font-weight:normal'>
                         <span lang=EN style='font-size:12.0pt;
 line-height:90%;font-family:"Times New Roman",serif;mso-fareast-font-family:
+<<<<<<< HEAD
 "Times New Roman"'><o:p>&nbsp;</o:p></span>
                     </b>
                 </p>
@@ -1540,6 +1750,50 @@ mso-fareast-font-family:"Times New Roman"'>Task<o:p></o:p></span>
                 <p class=MsoNormal style='line-height:90%;mso-pagination:none'>
                     <b style='mso-bidi-font-weight:normal'>
                         <span lang=EN style='font-size:12.0pt;
+=======
+"Times New Roman"'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal style='line-height:90%;mso-pagination:none'><span lang=EN
+style='font-size:12.0pt;line-height:90%;font-family:"Times New Roman",serif;
+mso-fareast-font-family:"Times New Roman"'>In order to predict the semantic
+composition of a single core block, we encode the visual information of that
+block, and larger blocks in that multiscale <span class=SpellE>pyrymic</span>
+into a single vector, reducing the dimensionality of the input by a large
+margin.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='line-height:90%;mso-pagination:none'><span lang=EN
+style='font-size:12.0pt;line-height:90%;font-family:"Times New Roman",serif;
+mso-fareast-font-family:"Times New Roman";mso-no-proof:yes'><!--[if gte vml 1]><v:shape
+ id="image8.png" o:spid="_x0000_i1028" type="#_x0000_t75" style='width:351pt;
+ height:262.8pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="Semantic%20Segmentation%20Web_files/image011.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=468 height=350
+src="Semantic%20Segmentation%20Web_files/image012.gif" v:shapes="image8.png"><![endif]></span><span
+lang=EN style='font-size:12.0pt;line-height:90%;font-family:"Times New Roman",serif;
+mso-fareast-font-family:"Times New Roman"'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='line-height:90%;mso-pagination:none'><span lang=EN
+style='font-size:12.0pt;line-height:90%;font-family:"Times New Roman",serif;
+mso-fareast-font-family:"Times New Roman";mso-no-proof:yes'><!--[if gte vml 1]><v:shape
+ id="image9.gif" o:spid="_x0000_i1027" type="#_x0000_t75" style='width:468.6pt;
+ height:312.3pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="Semantic%20Segmentation%20Web_files/image013.gif" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=625 height=416
+src="Semantic%20Segmentation%20Web_files/image013.gif" v:shapes="image9.gif"><![endif]></span><span
+lang=EN style='font-size:12.0pt;line-height:90%;font-family:"Times New Roman",serif;
+mso-fareast-font-family:"Times New Roman"'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='line-height:90%;mso-pagination:none'><span lang=EN
+style='font-size:18.0pt;line-height:90%;font-family:"Times New Roman",serif;
+mso-fareast-font-family:"Times New Roman"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='line-height:90%;mso-pagination:none'><span lang=EN
+style='font-size:18.0pt;line-height:90%;font-family:"Times New Roman",serif;
+mso-fareast-font-family:"Times New Roman"'>Task<o:p></o:p></span></p>
+
+<p class=MsoNormal style='line-height:90%;mso-pagination:none'><b
+style='mso-bidi-font-weight:normal'><span lang=EN style='font-size:12.0pt;
+>>>>>>> 2aba1a787ac50a29224d0de47bd3204793600496
 line-height:90%;font-family:"Times New Roman",serif;mso-fareast-font-family:
 "Times New Roman"'>Cityscapes Dataset<o:p></o:p></span>
                     </b>
@@ -1599,6 +1853,7 @@ mso-fareast-font-family:"Times New Roman"'>Results<o:p></o:p></span>
                     <b style='mso-bidi-font-weight:normal'>
                         <span lang=EN style='font-size:12.0pt;
 line-height:90%;font-family:"Times New Roman",serif;mso-fareast-font-family:
+<<<<<<< HEAD
 "Times New Roman"'>Model Size<o:p></o:p></span>
                     </b>
                 </p>
@@ -1616,6 +1871,18 @@ mso-fareast-font-family:"Times New Roman"'>
                 <p class=MsoNormal style='line-height:90%;mso-pagination:none'>
                     <b style='mso-bidi-font-weight:normal'>
                         <span lang=EN style='font-size:12.0pt;
+=======
+"Times New Roman"'>Model Size<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='line-height:90%;mso-pagination:none'><span lang=EN
+style='font-size:12.0pt;line-height:90%;font-family:"Times New Roman",serif;
+mso-fareast-font-family:"Times New Roman"'>Our model size contains a total of
+47,998 parameters, which is tiny in comparison to UNETs massive 2,060,424
+parameters in their model.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='line-height:90%;mso-pagination:none'><b
+style='mso-bidi-font-weight:normal'><span lang=EN style='font-size:12.0pt;
+>>>>>>> 2aba1a787ac50a29224d0de47bd3204793600496
 line-height:90%;font-family:"Times New Roman",serif;mso-fareast-font-family:
 "Times New Roman"'><o:p>&nbsp;</o:p></span>
                     </b>
@@ -1625,6 +1892,7 @@ line-height:90%;font-family:"Times New Roman",serif;mso-fareast-font-family:
                     <b style='mso-bidi-font-weight:normal'>
                         <span lang=EN style='font-size:12.0pt;
 line-height:90%;font-family:"Times New Roman",serif;mso-fareast-font-family:
+<<<<<<< HEAD
 "Times New Roman"'>Training Time<o:p></o:p></span>
                     </b>
                 </p>
@@ -1644,6 +1912,20 @@ mso-fareast-font-family:"Times New Roman"'>
                 <p class=MsoNormal style='line-height:90%;mso-pagination:none'>
                     <b style='mso-bidi-font-weight:normal'>
                         <span lang=EN style='font-size:12.0pt;
+=======
+"Times New Roman"'>Training Time<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='line-height:90%;mso-pagination:none'><span lang=EN
+style='font-size:12.0pt;line-height:90%;font-family:"Times New Roman",serif;
+mso-fareast-font-family:"Times New Roman"'>Given this massive difference in the
+number of parameters, the training times are also vastly different. Our neural
+network could be trained within 20 minutes while utilizing 30% of a laptop
+processor, meanwhile UNETs pixel-wise segmentation model used a graphics card
+while still taking 400 minutes to train.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='line-height:90%;mso-pagination:none'><b
+style='mso-bidi-font-weight:normal'><span lang=EN style='font-size:12.0pt;
+>>>>>>> 2aba1a787ac50a29224d0de47bd3204793600496
 line-height:90%;font-family:"Times New Roman",serif;mso-fareast-font-family:
 "Times New Roman"'><o:p>&nbsp;</o:p></span>
                     </b>
@@ -1851,6 +2133,7 @@ mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US'><o:p></o:p></
                     <b style='mso-bidi-font-weight:normal'>
                         <span lang=EN style='font-size:12.0pt;
 line-height:90%;font-family:"Times New Roman",serif;mso-fareast-font-family:
+<<<<<<< HEAD
 "Times New Roman"'><o:p>&nbsp;</o:p></span>
                     </b>
                 </p>
@@ -2055,6 +2338,142 @@ mso-fareast-font-family:"Times New Roman"'><o:p></o:p></span>
         </div>
 
     </div>
+=======
+"Times New Roman"'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal style='line-height:90%;mso-pagination:none'><span lang=EN
+style='font-size:18.0pt;line-height:90%;font-family:"Times New Roman",serif;
+mso-fareast-font-family:"Times New Roman"'>Link to GitHub repo: </span><span
+lang=EN><a href="https://github.com/benthehuman1/UW-Vision-Segmentation"><span
+style='font-size:18.0pt;line-height:90%;font-family:"Times New Roman",serif;
+mso-fareast-font-family:"Times New Roman"'>https://github.com/benthehuman1/UW-Vision-Segmentation</span></a></span><span
+lang=EN style='font-size:18.0pt;line-height:90%;font-family:"Times New Roman",serif;
+mso-fareast-font-family:"Times New Roman"'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='line-height:90%;mso-pagination:none'><span lang=EN
+style='font-size:18.0pt;line-height:90%;font-family:"Times New Roman",serif;
+mso-fareast-font-family:"Times New Roman"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='line-height:90%;mso-pagination:none'><span lang=EN
+style='font-size:18.0pt;line-height:90%;font-family:"Times New Roman",serif;
+mso-fareast-font-family:"Times New Roman"'>References<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in;text-indent:-.25in;line-height:90%;
+mso-pagination:none;mso-list:l0 level1 lfo1'><![if !supportLists]><span
+lang=EN style='font-size:12.0pt;line-height:90%;font-family:"Times New Roman",serif;
+mso-fareast-font-family:"Times New Roman"'><span style='mso-list:Ignore'>&#9679;<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><![endif]><span
+lang=EN style='font-size:12.0pt;line-height:90%;font-family:"Times New Roman",serif;
+mso-fareast-font-family:"Times New Roman"'>The cityscapes dataset<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:1.0in;text-indent:-.25in;line-height:
+90%;mso-pagination:none;mso-list:l0 level2 lfo1'><![if !supportLists]><span
+lang=EN style='font-size:12.0pt;line-height:90%;font-family:"Times New Roman",serif;
+mso-fareast-font-family:"Times New Roman"'><span style='mso-list:Ignore'>&#9675;<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><![endif]><span
+lang=EN style='font-size:10.0pt;line-height:90%;color:#222222;background:white;
+mso-highlight:white'>Cordts, M., Omran, M., Ramos, S., Rehfeld, T., Enzweiler,
+M., Benenson, R., ... &amp; Schiele, B. (2016). The cityscapes dataset for
+semantic urban scene understanding. In <i style='mso-bidi-font-style:normal'>Proceedings
+of the IEEE conference on computer vision and pattern recognition</i> (pp.
+3213-3223).</span><span lang=EN style='font-size:12.0pt;line-height:90%;
+font-family:"Times New Roman",serif;mso-fareast-font-family:"Times New Roman"'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in;text-indent:-.25in;line-height:90%;
+mso-pagination:none;mso-list:l0 level1 lfo1'><![if !supportLists]><span
+lang=EN style='font-size:12.0pt;line-height:90%;font-family:"Times New Roman",serif;
+mso-fareast-font-family:"Times New Roman"'><span style='mso-list:Ignore'>&#9679;<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><![endif]><span
+lang=EN style='font-size:12.0pt;line-height:90%;font-family:"Times New Roman",serif;
+mso-fareast-font-family:"Times New Roman"'><span
+style='mso-spacerun:yes'> </span>PCA color reduction <o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:1.0in;text-indent:-.25in;line-height:
+90%;mso-pagination:none;mso-list:l0 level2 lfo1'><![if !supportLists]><span
+lang=EN style='font-size:12.0pt;line-height:90%;font-family:"Times New Roman",serif;
+mso-fareast-font-family:"Times New Roman"'><span style='mso-list:Ignore'>&#9675;<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><![endif]><span
+lang=EN style='font-size:10.0pt;line-height:90%;color:#222222;background:white;
+mso-highlight:white'>De <span class=SpellE>Lathauwer</span>, L., &amp;
+Vandewalle, J. (2004). Dimensionality reduction in higher-order signal
+processing and rank-(R1, R2,, RN) reduction in multilinear algebra. <i
+style='mso-bidi-font-style:normal'>Linear Algebra and its Applications</i>, <i
+style='mso-bidi-font-style:normal'>391</i>, 31-55.</span><span lang=EN
+style='font-size:12.0pt;line-height:90%;font-family:"Times New Roman",serif;
+mso-fareast-font-family:"Times New Roman"'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in;text-indent:-.25in;line-height:90%;
+mso-pagination:none;mso-list:l0 level1 lfo1'><![if !supportLists]><span
+lang=EN style='font-size:12.0pt;line-height:90%;font-family:"Times New Roman",serif;
+mso-fareast-font-family:"Times New Roman"'><span style='mso-list:Ignore'>&#9679;<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><![endif]><span
+lang=EN style='font-size:12.0pt;line-height:90%;font-family:"Times New Roman",serif;
+mso-fareast-font-family:"Times New Roman"'>CNNs:<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:1.0in;text-indent:-.25in;line-height:
+90%;mso-pagination:none;mso-list:l0 level2 lfo1'><![if !supportLists]><span
+lang=EN style='font-size:12.0pt;line-height:90%;font-family:"Times New Roman",serif;
+mso-fareast-font-family:"Times New Roman"'><span style='mso-list:Ignore'>&#9675;<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><![endif]><span
+class=SpellE><span lang=EN style='font-size:10.0pt;line-height:90%;color:#222222;
+background:white;mso-highlight:white'>LeCun</span></span><span lang=EN
+style='font-size:10.0pt;line-height:90%;color:#222222;background:white;
+mso-highlight:white'>, Y., Haffner, P., <span class=SpellE>Bottou</span>, L.,
+&amp; <span class=SpellE>Bengio</span>, Y. (1999). Object recognition with
+gradient-based learning. In <i style='mso-bidi-font-style:normal'>Shape,
+contour and grouping in computer vision</i> (pp. 319-345). Springer, Berlin,
+Heidelberg.</span><span lang=EN style='font-size:12.0pt;line-height:90%;
+font-family:"Times New Roman",serif;mso-fareast-font-family:"Times New Roman"'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in;text-indent:-.25in;line-height:90%;
+mso-pagination:none;mso-list:l0 level1 lfo1'><![if !supportLists]><span
+lang=EN style='font-size:12.0pt;line-height:90%;font-family:"Times New Roman",serif;
+mso-fareast-font-family:"Times New Roman"'><span style='mso-list:Ignore'>&#9679;<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><![endif]><span
+lang=EN style='font-size:12.0pt;line-height:90%;font-family:"Times New Roman",serif;
+mso-fareast-font-family:"Times New Roman"'>UNET:<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:1.0in;text-indent:-.25in;line-height:
+90%;mso-pagination:none;mso-list:l0 level2 lfo1'><![if !supportLists]><span
+lang=EN style='font-size:12.0pt;line-height:90%;font-family:"Times New Roman",serif;
+mso-fareast-font-family:"Times New Roman"'><span style='mso-list:Ignore'>&#9675;<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><![endif]><span
+class=SpellE><span lang=EN style='font-size:10.0pt;line-height:90%;color:#222222;
+background:white;mso-highlight:white'>Ronneberger</span></span><span lang=EN
+style='font-size:10.0pt;line-height:90%;color:#222222;background:white;
+mso-highlight:white'>, O., Fischer, P., &amp; Brox, T. (2015, October). U-net:
+Convolutional networks for biomedical image segmentation. In <i
+style='mso-bidi-font-style:normal'>International Conference on Medical image
+computing and computer-assisted intervention</i> (pp. 234-241). Springer, Cham.</span><span
+lang=EN style='font-size:12.0pt;line-height:90%;font-family:"Times New Roman",serif;
+mso-fareast-font-family:"Times New Roman"'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in;text-indent:-.25in;line-height:90%;
+mso-pagination:none;mso-list:l0 level1 lfo1'><![if !supportLists]><span
+lang=EN style='font-size:12.0pt;line-height:90%;font-family:"Times New Roman",serif;
+mso-fareast-font-family:"Times New Roman"'><span style='mso-list:Ignore'>&#9679;<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><![endif]><span
+class=SpellE><span lang=EN style='font-size:12.0pt;line-height:90%;font-family:
+"Times New Roman",serif;mso-fareast-font-family:"Times New Roman"'>ClidingWindow</span></span><span
+lang=EN style='font-size:12.0pt;line-height:90%;font-family:"Times New Roman",serif;
+mso-fareast-font-family:"Times New Roman"'>, then CNN:<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:1.0in;text-indent:-.25in;line-height:
+90%;mso-pagination:none;mso-list:l0 level2 lfo1'><![if !supportLists]><span
+lang=EN style='font-size:12.0pt;line-height:90%;font-family:"Times New Roman",serif;
+mso-fareast-font-family:"Times New Roman"'><span style='mso-list:Ignore'>&#9675;<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><![endif]><span
+lang=EN style='font-size:10.0pt;line-height:90%;color:#222222;background:white;
+mso-highlight:white'>Vigueras-Guillén, J. P., Sari, B., Goes, S. F., Lemij, H.
+G., van <span class=SpellE>Rooij</span>, J., Vermeer, K. A., &amp; van Vliet,
+L. J. (2019). Fully convolutional architecture vs sliding-window CNN for
+corneal endothelium cell segmentation. <i style='mso-bidi-font-style:normal'>BMC
+Biomedical Engineering</i>, <i style='mso-bidi-font-style:normal'>1</i>(1),
+1-16.</span><span lang=EN style='font-size:12.0pt;line-height:90%;font-family:
+"Times New Roman",serif;mso-fareast-font-family:"Times New Roman"'><o:p></o:p></span></p>
+
+</div>
+>>>>>>> 2aba1a787ac50a29224d0de47bd3204793600496
 
 </body>
 

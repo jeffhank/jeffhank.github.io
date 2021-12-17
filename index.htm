@@ -2,7 +2,7 @@
 xmlns:o="urn:schemas-microsoft-com:office:office"
 xmlns:w="urn:schemas-microsoft-com:office:word"
 xmlns:m="http://schemas.microsoft.com/office/2004/12/omml"
-xmlns="http://www.w3.org/TR/REC-html40">
+xmlns="http://www.w3.org/TR/REC-html40"> 
 
 <head>
 <meta http-equiv=Content-Type content="text/html; charset=windows-1252">
@@ -1069,10 +1069,10 @@ style='font-size:12.0pt;line-height:90%;font-family:"Times New Roman",serif;
 mso-fareast-font-family:"Times New Roman"'>Unfortunately, generalized semantic
 segmentation is among the hardest computer vision tasks because to predict the
 class of any single pixel requires high level of contextual knowledge about
-that pixel and <span class=SpellE>it’s</span> surroundings. There is almost no
-way to predict the semantic class of a single pixel using only it’s RGB values
+that pixel and <span class=SpellE>itÂ’s</span> surroundings. There is almost no
+way to predict the semantic class of a single pixel using only itÂ’s RGB values
 directly. A Blue-Greyish pixel could be part of a sky, a road, a building, a
-car, a road, or a jacket. It’s the challenge of semantic segmentation combined
+car, a road, or a jacket. ItÂ’s the challenge of semantic segmentation combined
 with the clear utility that has us interested in the task.<o:p></o:p></span></p>
 
 <p class=MsoNormal style='line-height:90%;mso-pagination:none'><span lang=EN
@@ -1114,9 +1114,9 @@ data and computational power, which are both expensive. <o:p></o:p></span></p>
 <p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
 12.0pt;margin-left:0in;line-height:90%;mso-pagination:none'><span lang=EN
 style='font-size:12.0pt;line-height:90%;font-family:"Times New Roman",serif;
-mso-fareast-font-family:"Times New Roman"'><span style='mso-tab-count:1'>            </span>In
+mso-fareast-font-family:"Times New Roman"'><span style='mso-tab-count:1'>Â Â Â Â Â Â Â Â Â Â Â  </span>In
 short, the goal of our approach is to create a learning-based approach to
-semantic segmentation that creates a “smaller” predictive model than current
+semantic segmentation that creates a Â“smallerÂ” predictive model than current
 convolutional methods. This in turn reduces the amount of training data
 required to train the model, and speeds up the learning process. This is done
 by dramatically reducing the dimensionality of the input to our predictive model.<b
@@ -1130,15 +1130,15 @@ line-height:90%;font-family:"Times New Roman",serif;mso-fareast-font-family:
 <p class=MsoNormal style='line-height:90%;mso-pagination:none'><b
 style='mso-bidi-font-weight:normal'><span lang=EN style='font-size:12.0pt;
 line-height:90%;font-family:"Times New Roman",serif;mso-fareast-font-family:
-"Times New Roman"'><span style='mso-tab-count:1'>            </span></span></b><span
+"Times New Roman"'><span style='mso-tab-count:1'>Â Â Â Â Â Â Â Â Â Â Â  </span></span></b><span
 lang=EN style='font-size:12.0pt;line-height:90%;font-family:"Times New Roman",serif;
 mso-fareast-font-family:"Times New Roman"'>One way that we accomplish this is
-by creating a model that makes a prediction only about a small “chunk” of an
+by creating a model that makes a prediction only about a small Â“chunkÂ” of an
 image. In our case, we predict the semantic composition of only a 32x32 chunk
 of a high-resolution image. However, in order to make a prediction about that
-small chunk, it helps to also know the visual “context” of the area surrounding
-that chunk. This context is captured by using a multiscale “pyramid” of
-progressively larger but lower-fidelity chunks surrounding the “core” chunk we
+small chunk, it helps to also know the visual Â“contextÂ” of the area surrounding
+that chunk. This context is captured by using a multiscale Â“pyramidÂ” of
+progressively larger but lower-fidelity chunks surrounding the Â“coreÂ” chunk we
 wish to make a prediction on.<o:p></o:p></span></p>
 
 <p class=MsoNormal style='line-height:90%;mso-pagination:none'><span lang=EN
@@ -1162,7 +1162,7 @@ mso-fareast-font-family:"Times New Roman"'><o:p>&nbsp;</o:p></span></p>
 
 <p class=MsoNormal style='line-height:90%;mso-pagination:none'><span lang=EN
 style='font-size:12.0pt;line-height:90%;font-family:"Times New Roman",serif;
-mso-fareast-font-family:"Times New Roman"'><span style='mso-tab-count:1'>            </span>In
+mso-fareast-font-family:"Times New Roman"'><span style='mso-tab-count:1'>Â Â Â Â Â Â Â Â Â Â Â  </span>In
 order to perform semantic segmentation on the whole image, we then slide this
 pyramid across the whole image, giving us a semantic prediction of every 32x32
 subblock. <o:p></o:p></span></p>
@@ -1190,10 +1190,10 @@ further.<o:p></o:p></span></p>
 lang=EN style='font-size:12.0pt;line-height:90%;font-family:"Times New Roman",serif;
 mso-fareast-font-family:"Times New Roman"'>Consider a single 32x32 black &amp;
 while image. Similar to how we can use the <span class=SpellE>fourier</span>
-transform / discrete cosine transform to perform a “basis” transformation, giving
+transform / discrete cosine transform to perform a Â“basisÂ” transformation, giving
 us the original 32x32 image in different basis coefficients, we can also use
-PCA to get different basis coefficients for the image. We can then “drop” most
-of these basis coefficients, obtaining a compact “representation” of the
+PCA to get different basis coefficients for the image. We can then Â“dropÂ” most
+of these basis coefficients, obtaining a compact Â“representationÂ” of the
 original 32x32 image. If we want to perform a prediction about this 32x32
 image, we can use maybe 90 of the most important PCA coefficients instead of
 the whole 1024 pixel values. <o:p></o:p></span></p>
@@ -1211,7 +1211,7 @@ mso-fareast-font-family:"Times New Roman"'><o:p></o:p></span></p>
 
 <p class=MsoNormal style='text-indent:.5in;line-height:90%;mso-pagination:none'><span
 lang=EN style='font-size:12.0pt;line-height:90%;font-family:"Times New Roman",serif;
-mso-fareast-font-family:"Times New Roman"'>[Include example “compressed” <span
+mso-fareast-font-family:"Times New Roman"'>[Include example Â“compressedÂ” <span
 class=SpellE>pca</span> image]<o:p></o:p></span></p>
 
 <p class=MsoNormal style='line-height:90%;mso-pagination:none'><b
@@ -1227,19 +1227,19 @@ line-height:90%;font-family:"Times New Roman",serif;mso-fareast-font-family:
 <p class=MsoNormal style='line-height:90%;mso-pagination:none'><b
 style='mso-bidi-font-weight:normal'><span lang=EN style='font-size:12.0pt;
 line-height:90%;font-family:"Times New Roman",serif;mso-fareast-font-family:
-"Times New Roman"'><span style='mso-tab-count:1'>            </span></span></b><span
+"Times New Roman"'><span style='mso-tab-count:1'>Â Â Â Â Â Â Â Â Â Â Â  </span></span></b><span
 lang=EN style='font-size:12.0pt;line-height:90%;font-family:"Times New Roman",serif;
 mso-fareast-font-family:"Times New Roman"'>Beyond using PCA to reduce the
-dimensionality of the “Texture” information of an image sub-block, we can also
+dimensionality of the Â“TextureÂ” information of an image sub-block, we can also
 use PCA to reduce the dimensionality of the color information of each image.
 Images are typically thought of as having red, green, and blue channels. To dimensionality-reduce
 an image, we could apply the PCA texture encoding to the red, green, &amp; blue
 channels of an image. However, if you apply PCA to the RGB values of an image,
 you get a more efficient way to represent an image. You get three new channels,
-specific to that image, where the first channel is “most important”, the second
+specific to that image, where the first channel is Â“most importantÂ”, the second
 one less important than the first channel, and the last channel least
 important. For example, this small image of some tree roots with mulch is well
-approximated when using only &#8532; “PCA” channels. <o:p></o:p></span></p>
+approximated when using only &#8532; Â“PCAÂ” channels. <o:p></o:p></span></p>
 
 <p class=MsoNormal style='line-height:90%;mso-pagination:none'><span lang=EN
 style='font-size:12.0pt;line-height:90%;font-family:"Times New Roman",serif;
@@ -1253,13 +1253,13 @@ src="Semantic%20Segmentation%20Web_files/image008.gif" v:shapes="image4.png"><![
 
 <p class=MsoNormal style='line-height:90%;mso-pagination:none'><span lang=EN
 style='font-size:12.0pt;line-height:90%;font-family:"Times New Roman",serif;
-mso-fareast-font-family:"Times New Roman"'><span style='mso-tab-count:1'>            </span><o:p></o:p></span></p>
+mso-fareast-font-family:"Times New Roman"'><span style='mso-tab-count:1'>Â Â Â Â Â Â Â Â Â Â Â  </span><o:p></o:p></span></p>
 
 <p class=MsoNormal style='line-height:90%;mso-pagination:none'><span lang=EN
 style='font-size:12.0pt;line-height:90%;font-family:"Times New Roman",serif;
-mso-fareast-font-family:"Times New Roman"'><span style='mso-tab-count:1'>            </span>Instead
+mso-fareast-font-family:"Times New Roman"'><span style='mso-tab-count:1'>Â Â Â Â Â Â Â Â Â Â Â  </span>Instead
 of applying PCA texture dimensionality reduction to the red, green, and blue
-channels, we apply it to the 3 custom “PCA” channels. Because we know that the
+channels, we apply it to the 3 custom Â“PCAÂ” channels. Because we know that the
 channels are ordered by importance, we encode the most texture information
 about the first channel, and less in the other two channels.<o:p></o:p></span></p>
 
@@ -1292,7 +1292,7 @@ line-height:90%;font-family:"Times New Roman",serif;mso-fareast-font-family:
 <p class=MsoNormal style='line-height:90%;mso-pagination:none'><span lang=EN
 style='font-size:12.0pt;line-height:90%;font-family:"Times New Roman",serif;
 mso-fareast-font-family:"Times New Roman"'>In order to predict the semantic
-composition of a single “core” block, we encode the visual information of that
+composition of a single Â“coreÂ” block, we encode the visual information of that
 block, and larger blocks in that multiscale <span class=SpellE>pyrymic</span>
 into a single vector, reducing the dimensionality of the input by a large
 margin.<o:p></o:p></span></p>
@@ -1369,7 +1369,7 @@ line-height:90%;font-family:"Times New Roman",serif;mso-fareast-font-family:
 <p class=MsoNormal style='line-height:90%;mso-pagination:none'><span lang=EN
 style='font-size:12.0pt;line-height:90%;font-family:"Times New Roman",serif;
 mso-fareast-font-family:"Times New Roman"'>Our model size contains a total of
-47,998 parameters, which is tiny in comparison to UNET’s massive 2,060,424
+47,998 parameters, which is tiny in comparison to UNETÂ’s massive 2,060,424
 parameters in their model.<o:p></o:p></span></p>
 
 <p class=MsoNormal style='line-height:90%;mso-pagination:none'><b
@@ -1387,7 +1387,7 @@ style='font-size:12.0pt;line-height:90%;font-family:"Times New Roman",serif;
 mso-fareast-font-family:"Times New Roman"'>Given this massive difference in the
 number of parameters, the training times are also vastly different. Our neural
 network could be trained within 20 minutes while utilizing 30% of a laptop
-processor, meanwhile UNET’s pixel-wise segmentation model used a graphics card
+processor, meanwhile UNETÂ’s pixel-wise segmentation model used a graphics card
 while still taking 400 minutes to train.<o:p></o:p></span></p>
 
 <p class=MsoNormal style='line-height:90%;mso-pagination:none'><b
@@ -1572,7 +1572,7 @@ mso-fareast-font-family:"Times New Roman"'><span style='mso-list:Ignore'>&#9679;
 style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><![endif]><span
 lang=EN style='font-size:12.0pt;line-height:90%;font-family:"Times New Roman",serif;
 mso-fareast-font-family:"Times New Roman"'><span
-style='mso-spacerun:yes'> </span>PCA color reduction <o:p></o:p></span></p>
+style='mso-spacerun:yes'>Â </span>PCA color reduction <o:p></o:p></span></p>
 
 <p class=MsoNormal style='margin-left:1.0in;text-indent:-.25in;line-height:
 90%;mso-pagination:none;mso-list:l0 level2 lfo1'><![if !supportLists]><span
@@ -1582,7 +1582,7 @@ style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></spa
 lang=EN style='font-size:10.0pt;line-height:90%;color:#222222;background:white;
 mso-highlight:white'>De <span class=SpellE>Lathauwer</span>, L., &amp;
 Vandewalle, J. (2004). Dimensionality reduction in higher-order signal
-processing and rank-(R1, R2,…, RN) reduction in multilinear algebra. <i
+processing and rank-(R1, R2,Â…, RN) reduction in multilinear algebra. <i
 style='mso-bidi-font-style:normal'>Linear Algebra and its Applications</i>, <i
 style='mso-bidi-font-style:normal'>391</i>, 31-55.</span><span lang=EN
 style='font-size:12.0pt;line-height:90%;font-family:"Times New Roman",serif;
@@ -1650,7 +1650,7 @@ lang=EN style='font-size:12.0pt;line-height:90%;font-family:"Times New Roman",se
 mso-fareast-font-family:"Times New Roman"'><span style='mso-list:Ignore'>&#9675;<span
 style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><![endif]><span
 lang=EN style='font-size:10.0pt;line-height:90%;color:#222222;background:white;
-mso-highlight:white'>Vigueras-Guillén, J. P., Sari, B., Goes, S. F., Lemij, H.
+mso-highlight:white'>Vigueras-GuillÃ©n, J. P., Sari, B., Goes, S. F., Lemij, H.
 G., van <span class=SpellE>Rooij</span>, J., Vermeer, K. A., &amp; van Vliet,
 L. J. (2019). Fully convolutional architecture vs sliding-window CNN for
 corneal endothelium cell segmentation. <i style='mso-bidi-font-style:normal'>BMC
